@@ -11,17 +11,32 @@ rescue Bundler::BundlerError => e
 end
 require 'rake'
 
+# temp hacking for "undefined method `sh'" error in Rake task
+class Object
+  alias sh system
+end
+
 require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "puer"
   gem.homepage = "http://github.com/eiffelqiu/puer"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Titanium Starter Project Generate Tools}
+  gem.description = %Q{Titanium Starter Project Generate Tools build with Ruby, Coffee Script, Backbone.js etc}
   gem.email = "eiffelqiu@gmail.com"
   gem.authors = ["Eiffel Qiu"]
+  gem.executables = ['puer']
+  gem.files = %w(LICENSE.txt README.md VERSION) + Dir.glob('lib/**/*')
   # dependencies defined in Gemfile
+  gem.add_dependency 'activesupport', '>= 3.2.8'  
+  gem.add_dependency 'grit'
+  gem.add_dependency 'i18n'
+  gem.add_dependency 'hirb'
+  gem.add_dependency 'cli-colorize'
+  gem.add_dependency 'rdoc'
+  gem.add_dependency 'yajl-ruby'  
+
 end
 Jeweler::RubygemsDotOrgTasks.new
 
@@ -30,14 +45,6 @@ Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
   test.pattern = 'test/**/test_*.rb'
   test.verbose = true
-end
-
-require 'rcov/rcovtask'
-Rcov::RcovTask.new do |test|
-  test.libs << 'test'
-  test.pattern = 'test/**/test_*.rb'
-  test.verbose = true
-  test.rcov_opts << '--exclude "gems/*"'
 end
 
 task :default => :test
