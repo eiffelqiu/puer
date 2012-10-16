@@ -6,6 +6,7 @@ gem "thor"
 gem "activesupport"
 gem "cli-colorize"
 gem "hirb"
+gem "plist"
 
 group :development do
   gem "rdoc", "~> 3.12"
@@ -17,8 +18,4 @@ group :development do
   gem "fakeweb",  ">=1.2.8"
   gem "shoulda", ">= 2.10.3"
   gem "uuid", ">= 2.3.1"  
-  platforms :mri_18 do
-    gem "ruby-prof", ">= 0.9.1"
-    gem "system_timer", ">= 1.0"
-  end  
 end
