@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "puer"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Eiffel Qiu"]
-  s.date = "2012-09-23"
+  s.date = "2012-10-16"
   s.description = "Titanium Starter Project Generate Tools build with Ruby, Coffee Script, Backbone.js etc"
   s.email = "eiffelqiu@gmail.com"
   s.executables = ["puer"]
@@ -21,12 +21,17 @@ Gem::Specification.new do |s|
     "LICENSE.txt",
     "README.md",
     "VERSION",
-    "lib/puer.rb"
+    "lib/puer.rb",
+    "lib/puer/config.rb",
+    "lib/puer/converters.rb",
+    "lib/puer/nodes.rb",
+    "lib/puer/session.rb",
+    "lib/puer/xibtoti.rb"
   ]
   s.homepage = "http://github.com/eiffelqiu/puer"
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = "1.8.21"
+  s.rubygems_version = "1.8.24"
   s.summary = "Titanium Starter Project Generate Tools"
 
   if s.respond_to? :specification_version then
@@ -37,6 +42,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<activesupport>, [">= 0"])
       s.add_runtime_dependency(%q<cli-colorize>, [">= 0"])
       s.add_runtime_dependency(%q<hirb>, [">= 0"])
+      s.add_runtime_dependency(%q<plist>, [">= 0"])
       s.add_development_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_development_dependency(%q<bundler>, ["~> 1.2.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.8.4"])
@@ -46,8 +52,6 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<fakeweb>, [">= 1.2.8"])
       s.add_development_dependency(%q<shoulda>, [">= 2.10.3"])
       s.add_development_dependency(%q<uuid>, [">= 2.3.1"])
-      s.add_development_dependency(%q<ruby-prof>, [">= 0.9.1"])
-      s.add_development_dependency(%q<system_timer>, [">= 1.0"])
       s.add_runtime_dependency(%q<activesupport>, [">= 3.2.8"])
       s.add_runtime_dependency(%q<grit>, [">= 0"])
       s.add_runtime_dependency(%q<i18n>, [">= 0"])
@@ -55,11 +59,13 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<cli-colorize>, [">= 0"])
       s.add_runtime_dependency(%q<rdoc>, [">= 0"])
       s.add_runtime_dependency(%q<yajl-ruby>, [">= 0"])
+      s.add_runtime_dependency(%q<plist>, [">= 0"])
     else
       s.add_dependency(%q<thor>, [">= 0"])
       s.add_dependency(%q<activesupport>, [">= 0"])
       s.add_dependency(%q<cli-colorize>, [">= 0"])
       s.add_dependency(%q<hirb>, [">= 0"])
+      s.add_dependency(%q<plist>, [">= 0"])
       s.add_dependency(%q<rdoc>, ["~> 3.12"])
       s.add_dependency(%q<bundler>, ["~> 1.2.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
@@ -69,8 +75,6 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<fakeweb>, [">= 1.2.8"])
       s.add_dependency(%q<shoulda>, [">= 2.10.3"])
       s.add_dependency(%q<uuid>, [">= 2.3.1"])
-      s.add_dependency(%q<ruby-prof>, [">= 0.9.1"])
-      s.add_dependency(%q<system_timer>, [">= 1.0"])
       s.add_dependency(%q<activesupport>, [">= 3.2.8"])
       s.add_dependency(%q<grit>, [">= 0"])
       s.add_dependency(%q<i18n>, [">= 0"])
@@ -78,12 +82,14 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<cli-colorize>, [">= 0"])
       s.add_dependency(%q<rdoc>, [">= 0"])
       s.add_dependency(%q<yajl-ruby>, [">= 0"])
+      s.add_dependency(%q<plist>, [">= 0"])
     end
   else
     s.add_dependency(%q<thor>, [">= 0"])
     s.add_dependency(%q<activesupport>, [">= 0"])
     s.add_dependency(%q<cli-colorize>, [">= 0"])
     s.add_dependency(%q<hirb>, [">= 0"])
+    s.add_dependency(%q<plist>, [">= 0"])
     s.add_dependency(%q<rdoc>, ["~> 3.12"])
     s.add_dependency(%q<bundler>, ["~> 1.2.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.8.4"])
@@ -93,8 +99,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<fakeweb>, [">= 1.2.8"])
     s.add_dependency(%q<shoulda>, [">= 2.10.3"])
     s.add_dependency(%q<uuid>, [">= 2.3.1"])
-    s.add_dependency(%q<ruby-prof>, [">= 0.9.1"])
-    s.add_dependency(%q<system_timer>, [">= 1.0"])
     s.add_dependency(%q<activesupport>, [">= 3.2.8"])
     s.add_dependency(%q<grit>, [">= 0"])
     s.add_dependency(%q<i18n>, [">= 0"])
@@ -102,6 +106,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<cli-colorize>, [">= 0"])
     s.add_dependency(%q<rdoc>, [">= 0"])
     s.add_dependency(%q<yajl-ruby>, [">= 0"])
+    s.add_dependency(%q<plist>, [">= 0"])
   end
 end
 
