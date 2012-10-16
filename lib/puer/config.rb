@@ -22,9 +22,9 @@ classes 'IBUIWindow' => 'Window',
 # color(:output)
 # font(:output)
 # vextor(:x, :y) # Where '{1, 2}' => {:x => 1, :y => 2}
-properties 'backgroundColor' => color(:backgroundColor),
-           'font' => font(:font),
+# properties 'backgroundColor' => color(:backgroundColor),
+properties 'font' => font(:font),
            'frameOrigin' => vector(:top, :bottom),
            'frameSize' => vector(:height, :width),
-           'text' => val(:text),
-           'textColor' => color(:color)
+           'text' => val(:text)
+           #'textColor' => color(:color)
