@@ -7,7 +7,13 @@ ignore_classes 'IBProxyObject'
 classes 'IBUIWindow' => 'Window',
         'IBUIView' => 'View',
         'IBUILabel' => 'Label',  
-        'IBUIButton' => 'Button'
+        'IBUIButton' => 'Button',
+        'IBUITextField' => 'TextField',
+        'IBUIImageView' => 'ImageView',
+        'IBUIScrollView' => 'ScrollView',
+        'IBUITableView' => 'TableView',
+        'IBUITextView' => 'TextView',
+        'IBUIWebView' => 'WebView'    
 
 # Available types: 
 # val(:output)

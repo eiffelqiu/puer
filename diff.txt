@@ -1,0 +1,226 @@
+4,8c4,8
+< 		<int key="IBDocument.SystemTarget">1536</int>
+< 		<string key="IBDocument.SystemVersion">12C60</string>
+< 		<string key="IBDocument.InterfaceBuilderVersion">2843</string>
+< 		<string key="IBDocument.AppKitVersion">1187.34</string>
+< 		<string key="IBDocument.HIToolboxVersion">625.00</string>
+---
+> 		<int key="IBDocument.SystemTarget">1280</int>
+> 		<string key="IBDocument.SystemVersion">11C74</string>
+> 		<string key="IBDocument.InterfaceBuilderVersion">1938</string>
+> 		<string key="IBDocument.AppKitVersion">1138.23</string>
+> 		<string key="IBDocument.HIToolboxVersion">567.00</string>
+11c11
+< 			<string key="NS.object.0">1929</string>
+---
+> 			<string key="NS.object.0">933</string>
+15d14
+< 			<string>IBProxyObject</string>
+18d16
+< 			<string>IBUILabel</string>
+19a18,19
+> 			<string>IBUILabel</string>
+> 			<string>IBProxyObject</string>
+352d351
+< 							<string key="IBUIColorCocoaTouchKeyPath">darkTextColor</string>
+3761c3760
+< 						<string key="NSFrame">{{342, 167}, {13, 61}}</string>
+---
+> 						<string key="NSFrame">{{361, 147}, {13, 61}}</string>
+6588a6588
+> 							<reference ref="447650645"/>
+6592d6591
+< 							<reference ref="447650645"/>
+8107c8106
+< 				<object class="NSArray" key="dict.values">
+---
+> 				<object class="NSMutableArray" key="dict.values">
+8412c8411
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8429c8428
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8465c8464
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8480c8479
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8505c8504
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8522c8521
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8578c8577
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8611c8610
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8689c8688
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8702c8701
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8748c8747
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8777c8776
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8838c8837
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8855c8854
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8888c8887
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8913c8912
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8965c8964
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+8980c8979
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+9007c9006
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+9028c9027
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+9071c9070
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+9084c9083
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+9106c9105
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+9125c9124
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+9170c9169
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+9195c9194
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+9398c9397
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+9731c9730
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10398c10397
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10411c10410
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10433c10432
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10452c10451
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10491c10490
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10504c10503
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10526c10525
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10545c10544
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10584c10583
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10597c10596
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10619c10618
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10638c10637
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10677c10676
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10690c10689
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10712c10711
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10731c10730
+< 						<object class="NSArray" key="dict.values">
+---
+> 						<object class="NSMutableArray" key="dict.values">
+10763a10763,10766
+> 		<object class="NSMutableDictionary" key="IBDocument.PluginDeclaredDependencyDefaults">
+> 			<string key="NS.key.0">com.apple.InterfaceBuilder.CocoaTouchPlugin.iPhoneOS</string>
+> 			<real value="1280" key="NS.object.0"/>
+> 		</object>
+10789c10792
+< 			<object class="NSArray" key="dict.values">
+---
+> 			<object class="NSMutableArray" key="dict.values">
+10807c10810
+< 		<string key="IBCocoaTouchPluginVersion">1929</string>
+---
+> 		<string key="IBCocoaTouchPluginVersion">933</string>

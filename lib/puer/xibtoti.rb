@@ -15,7 +15,7 @@ def inline_js_for(data)
 end
 
 def creation_call(name, class_name, info)
-  "#{name} = #{class_name}({\n" +
+  "var #{name} = #{class_name}({\n" +
     info.keys.sort.map {|key| "\t#{key}:#{inline_js_for(info[key])}"}.join(",\n") + "\n});"
 end
 
