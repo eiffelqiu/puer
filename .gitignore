@@ -1,0 +1,17 @@
+.bundle/*
+.document/*
+Gemfile.lock
+*.rbc
+.idea
+.rvmrc
+coverage
+pkg/*
+rdoc/*
+Gemfile.lock
+pkg/*
+
+*.xib
+*.js
+.DS_Store
+*.gemspec
+
