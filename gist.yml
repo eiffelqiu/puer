@@ -1,47 +1,43 @@
-info: 0.0.4
-snippet:
-- common_macro:
-  - id : 988462
-  - name : Common_Macro
-  - description : Most often used Macro in iphone/ipad project    
-- load_assets_in_webview: 
-  - id : 988227
-  - name : Load_Assets_In_Webview
-  - description : Load assets in Webview
-- validate_email:
-  - id : 988453
-  - name : Validate_Email
-  - description : Validating email address without using RegexKitLite
-- round_corner_image:
-  - id : 990058
-  - name : Round_Corner_Image
-  - description : How to make an image with rounded corners  
-- check_network_availability:
-  - id : 990085
-  - name : Check_Network_Availability
-  - description : Checking network availability on iOS
-- get_random_mumber_in_range:
-  - id : 990090
-  - name : Get_Random_Number_In_A_Range
-  - description : Get random number in Objective C
-- mail_usage:
-  - id : 990122
-  - name : mail_usage
-  - description : MFMailComposeViewController with availability check  
-- nsstring_md5:  
-  - id : 990141
-  - name : NSString_MD5
-  - description : NSString MD5 Function
-- stripping_html:  
-  - id : 990166
-  - name : Stripping_HTML
-  - description : Stripping HTML Function  
-- check_if_simulator:  
-  - id : 994426
-  - name : Check_If_Simulator
-  - description : A Macro to check if app run in Simulator
-- ordered_dictiona:  
-  - id : https://ordereddictiona.svn.sourceforge.net/svnroot/ordereddictiona 
-  - name : OrderedDictionary
-  - description : OrderedDictionary combines NSMutableArray and NSDictionary 
-  - type : svn 
+info: 0.0.5
+lib:
+- alloy: 
+  - id : git://github.com/appcelerator/alloy.git
+  - name : Alloy
+  - description : Alloy is an MVC framework for Titanium by Appcelerator
+- titanium_modules: 
+  - id : git://github.com/appcelerator/titanium_modules.git
+  - name : TitaniumModules
+  - description : Modules for Appcelerator's Titanium 
+- appcelerator_titanium_redux: 
+  - id : git://github.com/dawsontoth/Appcelerator-Titanium-Redux.git
+  - name :  AppceleratorTitaniumRedux
+  - description : Reduces the amount of code you need to write when using Titanium 
+ 
+utility: 
+- titanium_tools:
+  - id : git://github.com/krawaller/Titanium-Tools.git
+  - name : TitaniumTools
+  - description : A collection of nifty tools for Titanium Mobile 
+- titanium_calendar:
+  - id : git://github.com/stelford/Titanium-Calendar.git
+  - name : TitaniumCalendar
+  - description : Providing a Calendar Widget and Event creation for iPhone  
+
+app:
+- kitchen_sink:
+  - id : git://github.com/appcelerator/KitchenSink.git
+  - name : KitchenSink
+  - description : Titanium Mobile Kitchen Sink Demo 
+- kitchen_sink_nook:
+  - id : git://github.com/appcelerator/KitchenSinkNook.git
+  - name : KitchenSinkNook
+  - description : Titanium Mobile Kitchen Sink Nook Demo  
+- kitchen_sink_ipad:
+  - id : git://github.com/appcelerator/KitchenSinkiPad.git
+  - name : KitchenSinkiPad
+  - description : Kitchen Sink app for iPad  
+- titanium_jasmine:
+  - id : git://github.com/guilhermechapiewski/titanium-jasmine.git
+  - name : TitaniumJasmine
+  - description : provides testing for Appcelerator’s Titanium       
+                    
