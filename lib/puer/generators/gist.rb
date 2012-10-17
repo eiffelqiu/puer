@@ -60,7 +60,7 @@ module Puer
           system "mkdir -p #{puer_dir}" unless File.exist?(puer_dir)
           begin
             puts "fetching new gist list from server ... "
-            page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/appjam/gist.yml"))
+            page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/puer/gist.yml"))
             File.open(puer_gist, 'w') {|f| f.write(page_source) }
           rescue SocketError => e
             puts "can not access github.com, back to local version gist.yml"
@@ -183,7 +183,7 @@ module Puer
               require 'yaml'
               @xcode_project_name = File.basename(Dir.glob('tiapp.xml')[0],'tiapp.xml').downcase
               # begin
-              #   page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/appjam/gist.yml"))
+              #   page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/puer/gist.yml"))
               # rescue SocketError => e
               #   puts "can not access github.com, back to local version gist.yml"
               # end   

@@ -44,7 +44,7 @@ module Puer
         puts
         require 'yaml'
         # begin
-        #   page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/appjam/gist.yml"))
+        #   page_source = Net::HTTP.get(URI.parse("http://eiffelqiu.github.com/puer/gist.yml"))
         # rescue SocketError => e
         # end   
         # begin 
