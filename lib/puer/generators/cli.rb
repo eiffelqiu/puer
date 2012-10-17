@@ -53,7 +53,7 @@ module Puer
           end
           puts "notice: a new version '#{g['info']}' released" if g['info'] and g['info'].strip != "#{Puer::Version::STRING}"
           puts          
-          puts "Puer is a Titanium Starter Project Generate Tools"
+          puts "Puer is a Titanium Starter Project Generate Tool"
           puts          
           puts colorize("For more information")
           puts
