@@ -4,22 +4,7 @@ require 'converters'
 require 'rubygems'
 require 'plist'
 
-# Stores all configurable info on how to translate the xib to JS
-# The session is created from a config file.
-
-class Session
-  def initialize(path)
-    @ignore_properties = []
-    @ignore_classes = []
-    @classes = {}
-    @properties = {}
-    @log = []
-    File.open path do |file|
-      eval file.read
-    end
-  end
-  
-  attr_reader :out
+module Methods
   
   def parse_file(file)
     data = Plist::parse_xml( %x[ibtool #{file} --hierarchy --objects --connections] )
@@ -69,7 +54,9 @@ class Session
   end
   
   def ignore_properties(*names)
-    @ignore_properties += names
+    names.to_a.each do |o|
+      @ignore_properties << o if o
+    end if names
   end
   
   def ignore_classes(*names)
@@ -126,4 +113,28 @@ class Session
   def vector(x, y)
     MultiConverter.new([x, y], /\{(\d+), (\d+)\}/) {|v| v.to_i}
   end
+  
+end
+
+# Stores all configurable info on how to translate the xib to JS
+# The session is created from a config file.
+
+class Session
+  def initialize(path=nil)
+    @ignore_properties = []
+    @ignore_classes = []
+    @classes = {}
+    @properties = {}
+    @log = []
+    if (path) then
+      File.open path do |file|
+        eval file.read
+      end 
+    end
+  end
+  
+  attr_reader :out
+  
+  include Methods
+
 end
