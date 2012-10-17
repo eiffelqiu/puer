@@ -1,4 +1,4 @@
-info: 0.0.5
+info: 0.0.6
 lib:
 - alloy: 
   - id : git://github.com/appcelerator/alloy.git
