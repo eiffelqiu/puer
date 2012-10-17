@@ -1,0 +1,12 @@
+var <%= @class_name %>View = View.extend({
+    init: function(win, controller) {
+        this._super(win, controller);
+
+        this.layout();
+    },
+
+    layout: function() {
+
+    }
+
+});

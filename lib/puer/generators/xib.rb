@@ -24,15 +24,15 @@ module Puer
 
       # Define the source root
       def self.source_root; File.expand_path(File.dirname(__FILE__)); end
-      def self.banner; "puer xib [option]"; end
+      def self.banner; "puer xib "; end
 
       # Include related modules
       include Thor::Actions
       include Puer::Generators::Actions            
 
-      desc "Description:\n\n\tpuer will xib option"
+      desc "Description:\n\n\tpuer convert xib to js"
 
-      argument :name, :desc => "The name of option"
+      argument :name, :default => ""
 
       def in_app_root?
         # File.exist?('Classes')

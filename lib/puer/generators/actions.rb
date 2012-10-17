@@ -86,8 +86,8 @@ module Puer
 
       # Returns true if inside a Puer application
       def in_app_root?
-        File.exist?(destination_root('Classes'))
-        # Dir.glob("tiapp.xml").count >= 1
+        #File.exist?(destination_root('Classes'))
+        Dir.glob("tiapp.xml").count >= 1
       end
 
       # Returns the field with an unacceptable name(for symbol) else returns nil

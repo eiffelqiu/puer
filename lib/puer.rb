@@ -64,7 +64,7 @@ end # Puer
 ##
 # We add our generators to Puer::Genererator
 #
-Puer::Generators.load_paths << Dir[File.dirname(__FILE__) + '/puer/generators/{xib,lib,gist,search,help}.rb']
+Puer::Generators.load_paths << Dir[File.dirname(__FILE__) + '/puer/generators/{controller,model,xib,lib,gist,search,help}.rb']
 
 
 

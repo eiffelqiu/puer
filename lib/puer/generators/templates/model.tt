@@ -1,0 +1,13 @@
+var <%= @class_name %> = Model.extend({
+    _fields: {id: Number #{fields_sql}},
+
+    find: function(id) {
+        var model = new #{model}(this.db, this._find(id));
+        return model;
+    },
+
+    item_from: function(row) {
+        var model = new<%= @class_name %>(this.db, this._item_from(row));
+        return model;
+    }
+});

@@ -24,7 +24,7 @@ module Puer
       class_option :destroy, :aliases => '-d', :default => false,   :type    => :boolean
 
       def in_app_root?
-        File.exist?('Classes')
+        Dir.glob("tiapp.xml").count >= 1
       end     
 
       def create_app

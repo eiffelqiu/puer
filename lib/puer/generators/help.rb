@@ -32,7 +32,7 @@ module Puer
         @created_on = Date.today.to_s
         puts colorize( "Puer Version: #{Puer::Version::STRING}", { :foreground => :red, :background => :white, :config => :underline } )
         puts
-        puts "Puer is an iOS code repository, including framework, snippet, generators, etc."
+        puts "Puer is a Titanium Starter Project Generate Tool"
         puts  
         require 'yaml'
         gistfile = File.expand_path("~") + '/.puer/gist.yml'
@@ -43,13 +43,13 @@ module Puer
           g = YAML.load_file(File.expand_path(File.dirname(__FILE__) + '/gist.yml'))
         end
         puts "notice: a new version '#{g['info']}' released" if g['info'] and g['info'].strip != "#{Puer::Version::STRING}"
-        puts                      
+        puts                     
         puts colorize("Generator Options")
-        opt = [{ :category => "puremvc", :command => "puer mvc_project todo", :description => "generate puremvc iphone project"},
-               { :category => "puremvc", :command => "puer mvc_model user",   :description => "generate puremvc iphone model"}
+        opt = [{ :category => "generator", :command => "puer controller controller_name", :description => "generate controller for titanium"},
+               { :category => "generator", :command => "puer model model_name",   :description => "generate model for titanium"}
                ] 
         View.render(opt, RENDER_OPTIONS)
-        puts        
+        puts                             
         g.each_pair {|key,value|
           gitopt = []   
           gname = key.downcase.gsub('_',' ')
