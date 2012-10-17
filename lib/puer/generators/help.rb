@@ -46,7 +46,8 @@ module Puer
         puts                     
         puts colorize("Generator Options")
         opt = [{ :category => "generator", :command => "puer controller controller_name", :description => "generate controller for titanium"},
-               { :category => "generator", :command => "puer model model_name",   :description => "generate model for titanium"}
+               { :category => "generator", :command => "puer model model_name",   :description => "generate model for titanium"},
+               { :category => "generator", :command => "puer xib",   :description => "convert xib to js"}
                ] 
         View.render(opt, RENDER_OPTIONS)
         puts                             
